@@ -19,8 +19,6 @@ import javax.servlet.http.HttpSession;
 
 import Util.SQLUtil;
 
-import com.microsoft.sqlserver.jdbc.SQLServerDataSource;
-
 
 /**
  * Servlet implementation class SQLGatewayServlet
