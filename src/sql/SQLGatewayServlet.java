@@ -43,28 +43,9 @@ public class SQLGatewayServlet extends HttpServlet {
 		// TODO Auto-generated method stub
 		super.init(config); //added due to web page posting suggestion to correct ServletContext being null
 		try{ 
-			/*				
-			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-Connection con = null;
-			
-			SQLServerDataSource ds = new SQLServerDataSource();
-			ds.setIntegratedSecurity(true);
-			ds.setServerName("localhost");
-			ds.setPortNumber(54987); 
-			ds.setDatabaseName("test");
-			con = ds.getConnection();
-			
-			
-			String dbURL = "jdbc:sqlserver://localhost\\C:\\Program Files\\Microsoft SQL Server\\MSSQL13.DEV\\MSSQL";
-			String username = "";
-			String password = "";
-			connection = DriverManager.getConnection(dbURL, username, password);
-		*/
-			
-			
-		    String url = "jdbc:sqlserver://localhost:1434;databaseName=test;integratedSecurity=true";
-		    Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-		    connection = DriverManager.getConnection(url);
+		
+		    
+		    Class.forName("com.mysql.cj.jdbc.Driver"); connection=DriverManager.getConnection("jdbc:mysql:// localhost:3306/mysql","root","G017273_ab");
 		}
 		catch(ClassNotFoundException e){
 			System.out.println("Database driver not found.");
@@ -73,6 +54,7 @@ Connection con = null;
 			System.out.println("Error opening the db connection: "
 					+ e.getMessage()); 
 		}
+		
 	}
 
 	/**
