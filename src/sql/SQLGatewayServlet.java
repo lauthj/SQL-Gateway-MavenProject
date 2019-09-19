@@ -44,8 +44,8 @@ public class SQLGatewayServlet extends HttpServlet {
 		super.init(config); //added due to web page posting suggestion to correct ServletContext being null
 		try{ 
 		
-		    
-		    Class.forName("com.mysql.cj.jdbc.Driver"); connection=DriverManager.getConnection("jdbc:mysql:// localhost:3306/mysql","root","G017273_ab");
+		    // reset password correctly before running
+		    Class.forName("com.mysql.cj.jdbc.Driver"); connection=DriverManager.getConnection("jdbc:mysql:// localhost:3306/mysql","root","G0*****_**");
 		}
 		catch(ClassNotFoundException e){
 			System.out.println("Database driver not found.");
