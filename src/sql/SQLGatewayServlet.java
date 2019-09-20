@@ -45,7 +45,7 @@ public class SQLGatewayServlet extends HttpServlet {
 		try{ 
 		
 		    // reset password correctly before running
-		    Class.forName("com.mysql.cj.jdbc.Driver"); connection=DriverManager.getConnection("jdbc:mysql:// localhost:3306/mysql","root","G0*****_**");
+		    Class.forName("com.mysql.cj.jdbc.Driver"); connection=DriverManager.getConnection("jdbc:mysql:// localhost:3306/mysql","root","password");
 		}
 		catch(ClassNotFoundException e){
 			System.out.println("Database driver not found.");
