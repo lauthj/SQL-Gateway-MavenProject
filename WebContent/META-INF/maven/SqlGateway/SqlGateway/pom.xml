@@ -7,11 +7,19 @@
   
   <dependencies>
   
-  	<dependency>
+  	<!-- <dependency>
       <groupId>com.microsoft.sqlserver</groupId>
       <artifactId>mssql-jdbc</artifactId>
       <version>6.1.0.jre8</version>
-    </dependency>
+    </dependency> -->
+    
+    <!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+	<dependency>
+    	<groupId>mysql</groupId>
+    	<artifactId>mysql-connector-java</artifactId>
+    	<version>8.0.21</version>
+	</dependency>
+    
 
     <!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
     <dependency>
